@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  ems-service:
+    image: ncku-derms
+    container_name: ncku-derms
+    restart: unless-stopped
+    volumes:
+      - /tmp:/tmp
+      - /data/ncku_derms/logs:/home/app/workdir/data/logs
+    env_file:
+      - ./ncku_derms.env
+    ports:
+      - "8601:8888"
+
+  redis:
+    image: redis:6
+    container_name: ncku-derms-redis
+    restart: unless-stopped
+    ports:
+      - 6379
