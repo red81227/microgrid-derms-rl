@@ -1,9 +1,9 @@
-# service-ncku-derms
+# service-microgrid-derms
 
 
 <!-- /TOC -->
 
-This is backend of the NCKU DERMS project.
+This is backend of the microgrid DERMS project.
 
 ## Get started
 
